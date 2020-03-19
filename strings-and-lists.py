@@ -57,3 +57,14 @@ def count_character(string, target):
 print(count_character("oxen and foxen all live in boxen", "x"))
 print(count_character("that letter isn't here", "x"))
 print(count_character("the goofy doom of the balloon goons", "o"))
+
+
+def start_K(word):
+    if word[0] == "K":
+        return True
+    else:
+        return False
+
+
+print(start_K("Kelly"))
+print(start_K("Abe"))
