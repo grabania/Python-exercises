@@ -90,3 +90,13 @@ length = len(word)
 
 for n in range(length):
     print(word[0:n + 1])
+
+
+def adverbly(s):
+    return s + "ly"
+
+
+print(adverbly("quick"))
+
+name = input("hi, what's your name?")
+print("hi " + name + ", nice to meet you!")
