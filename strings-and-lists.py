@@ -68,3 +68,19 @@ def start_K(word):
 
 print(start_K("Kelly"))
 print(start_K("Abe"))
+
+
+for n in range(4):
+    print(n)
+
+for n in range(1, 4):
+    print(n)
+
+for n in range(97, 101):
+    print(n)
+
+for n in range(0, 10, 2):
+    print(n)
+
+for n in range(2, 5, 1):
+    print(n)
