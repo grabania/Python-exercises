@@ -32,3 +32,28 @@ for ch in "Hello!":
     print(ch)
     if ch == "!":
         print("I am excited too!!!")
+
+for ch in "bonobos":
+    if ch == "o":
+        print("hi")
+
+count = 0
+for ch in "bonobos":
+    if ch == "o":
+        count = count + 1
+
+print(count)
+
+
+def count_character(string, target):
+    count = 0
+
+    for ch in "bonobos":
+        if ch == "o":
+            count = count + 1
+    return count
+
+
+print(count_character("oxen and foxen all live in boxen", "x"))
+print(count_character("that letter isn't here", "x"))
+print(count_character("the goofy doom of the balloon goons", "o"))
