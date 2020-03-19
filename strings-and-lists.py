@@ -84,3 +84,9 @@ for n in range(0, 10, 2):
 
 for n in range(2, 5, 1):
     print(n)
+
+word = "definitely"
+length = len(word)
+
+for n in range(length):
+    print(word[0:n + 1])
