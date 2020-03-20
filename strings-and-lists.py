@@ -111,3 +111,73 @@ n2 = input("Enter another number: ")
 n3 = input("Enter a third number: ")
 sum = int(n1) + int(n2) + int(n3)
 print(f"{n1} + {n2} + {n3} = {sum}")
+
+
+def starts_with(word1, word2):
+    if word1[0] == word2[0]:
+        return True
+    else:
+        return False
+
+
+print(starts_with("banana", "bread"))
+print(starts_with("zebonkey", "kiwi"))
+
+
+def starts_with(word1, word2):
+    if word1[0] != word2[0]:
+        return False
+    else:
+        return True
+
+
+print(starts_with("banana", "bread"))
+print(starts_with("zebonkey", "kiwi"))
+
+
+def starts_with(s1, s2):
+    return s1[0] == s2[0]
+
+
+print(starts_with("banana", "bread"))
+print(starts_with("zebonkey", "kiwi"))
+
+
+def starts_with(long, short):
+    for position in range(len(short)):
+        if long[position] != short[position]:
+            return False
+    return True
+
+
+print(starts_with("apple", "app"))
+print(starts_with("manatee", "mango"))
+
+
+def starts_with(long, short):
+    if long[0:len(short)] == short:
+        return True
+    else:
+        return False
+
+
+print(starts_with("apple", "app"))
+print(starts_with("manatee", "mango"))
+
+
+def starts_with(long, short):
+    return long[0:len(short)] == short
+
+
+print(starts_with("apple", "app"))
+print(starts_with("manatee", "mango"))
+
+
+def possible_tag(word):
+    if word.startswith("<")and word.endswith(">"):
+        print(word, "could maybe be a HTML tag")
+    else:
+        print(word, "is definitely not an HTML tag (but might contain one)")
+
+
+possible_tag("HEY")
