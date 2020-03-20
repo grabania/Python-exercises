@@ -16,3 +16,15 @@ print(total_length(['balloons']))
 
 # Should return 0 (it has four empty strings):
 print(total_length(["", '', "", '']))
+
+words = ["echidna", "dingo", "crocodile", "bunyip"]
+words.append("platypus")
+
+
+def password_check():
+    while input("Password: ") != "swordfish":
+        print("Wrong! Try again!")
+    print("Okey, come on it!")
+
+
+password_check()
