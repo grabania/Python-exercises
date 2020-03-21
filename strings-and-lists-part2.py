@@ -47,3 +47,15 @@ while n > 0:
     time.sleep(1)
     n -= 1
 print("Blastoff!")
+
+s = "Tenochtitan"
+index = 0
+while index < len(s):
+    index += 1
+    print(s[:index])
+
+s = "abracadabra"
+index = len(s)
+while index > 0:
+    print(s[:index])
+    index -= 1
