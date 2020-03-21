@@ -85,3 +85,65 @@ word = "cat"
 while index < len(word):
     print(word[index])
     index += 1
+
+# 2 examples of functions - with for and while loop which does the same thing
+
+
+def count_character(string, target):
+    total = 0
+    for ch in string:
+        if ch == target:
+            total += 1
+    return total
+
+
+print(count_character("bonobo", "o"))
+
+
+def count_caracter(string, target):
+    total = 0
+    index = 0
+    while index < len(string):
+        if string[index] == target:
+            total += 1
+        index += 1
+    return total
+
+
+print(count_character("bonobo", "o"))
+
+index = 0
+s = "Mind the gap!"
+while index < len(s) and s[index] != " ":
+    index += 1
+print(s[:index])
+
+index = 0
+sentence = "Hi friend. How are you?"
+while index < len(sentence) and sentence[index] != ".":
+    index += 1
+print(sentence[:index])
+
+# Linear search while loop used
+
+
+def until_dot(s):
+    index = 0
+    while index < len(s) and s[index] != '.':
+        index += 1
+    return s[:index]
+
+
+print(until_dot("Great. Done"))
+
+# Linear search for loop used
+
+
+def until_dot(s):
+    for index in range(len(s)):
+        if s[index] == '.':
+            return s[:index]
+    return s
+
+
+print(until_dot("Well done. Thank you"))
