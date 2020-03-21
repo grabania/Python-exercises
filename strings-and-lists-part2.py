@@ -1,3 +1,6 @@
+import time
+
+
 def total_length(list_of_strings):
     total = 0
     for string in list_of_strings:
@@ -41,5 +44,6 @@ while n <= 3:
 n = 10
 while n > 0:
     print(n)
+    time.sleep(1)
     n -= 1
 print("Blastoff!")
