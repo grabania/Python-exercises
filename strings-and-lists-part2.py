@@ -59,3 +59,29 @@ index = len(s)
 while index > 0:
     print(s[:index])
     index -= 1
+
+
+# 2 examples of loops - for and while which does the same thing
+word = "cat"
+for index in range(len(word)):
+    print(index)
+
+
+index = 0
+word = "cat"
+while index < len(word):
+    print(index)
+    index += 1
+
+
+# 2 examples of loops - for and while which does the same thing
+word = "cat"
+for index in range(len(word)):
+    print(word[index])
+
+
+index = 0
+word = "cat"
+while index < len(word):
+    print(word[index])
+    index += 1
