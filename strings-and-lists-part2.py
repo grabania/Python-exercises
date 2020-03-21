@@ -139,11 +139,38 @@ print(until_dot("Great. Done"))
 # Linear search for loop used
 
 
-def until_dot(s):
+def until_dott(s):
     for index in range(len(s)):
         if s[index] == '.':
             return s[:index]
     return s
 
 
-print(until_dot("Well done. Thank you"))
+print(until_dott("Well done. Thank you"))
+
+# Exit from the infinite loop by using break statement
+# def no_repeating():
+#     words = []
+#     while True:
+#         word = input("Tell me a word: ")
+#         if word in words:
+#             print("You told me that word already!")
+#             break
+#         words.append(word)
+#     return words
+
+
+def is_substring(substring, string):
+    index = 0
+    while index < len(string):
+        if string[index: index + len(substring)] == substring:
+            return True
+        index += 1
+    return False
+
+
+# This one should return False
+print(is_substring('bad', 'abracadabra'))
+
+# This one should return True
+print(is_substring('dab', 'abracadabra'))
