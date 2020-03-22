@@ -110,7 +110,7 @@ def count_caracter(string, target):
     return total
 
 
-print(count_character("bonobo", "o"))
+print(count_caracter("bonobo", "o"))
 
 index = 0
 s = "Mind the gap!"
@@ -174,3 +174,16 @@ print(is_substring('bad', 'abracadabra'))
 
 # This one should return True
 print(is_substring('dab', 'abracadabra'))
+
+
+def count_substring(string, target):
+    index = 0
+    total = 0
+    while index < len(string):
+        if string[index: index + len(target)] == target:
+            total += 1
+        index += 1
+    return total
+
+
+print(count_substring('love, love, love, all you need is love', 'love'))
